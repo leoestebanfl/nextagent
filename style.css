@@ -1,0 +1,31 @@
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.header {
+    /* background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(161, 211, 230) 50%); */
+    display: flex;
+    padding: 20px 40px;
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    font-size: 1.3em;
+    color: rgb(23, 62, 98);
+}
+
+a {
+    color: rgb(23, 62, 98);
+    text-decoration: none;
+}
+
+.header img {
+    flex: 0 0 auto;
+}
