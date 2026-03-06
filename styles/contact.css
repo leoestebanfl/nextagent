@@ -35,10 +35,10 @@ nav {
     background: rgba(13,27,42,0.85); backdrop-filter: blur(14px);
     padding: 0 48px; display: flex; align-items: center; justify-content: space-between;
     position: sticky; top: 0; z-index: 100;
-    border-bottom: 1px solid rgba(0,194,255,0.15); height: 68px;
+    border-bottom: 1px solid rgba(0,194,255,0.15); height: 88px;
 }
 
-.nav-logo img { width: 52px; display: block; }
+.nav-logo img { width: 80px; display: block; }
 .nav-links { display: flex; gap: 36px; list-style: none; }
 
 .nav-links a {
