@@ -22,6 +22,10 @@
     color: var(--white);
 }
 
+html {
+    font-size: 18px;
+}
+
 body {
     background-color: var(--blue-dark);
     overflow-x: hidden;
@@ -160,11 +164,39 @@ nav {
     animation: pulse 1.5s infinite;
 }
 
+/* ── NOMBRE DE EMPRESA ── */
+.hero-brand {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 20px;
+    opacity: 0.95;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.hero-brand::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    border-radius: 2px;
+}
+
+/* ── SLOGAN ── */
 .hero h1 {
-    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-size: clamp(1.6rem, 3.5vw, 2.8rem);
     font-weight: 900;
-    line-height: 1.15;
-    max-width: 760px;
+    line-height: 1.2;
+    max-width: 680px;
     animation: fadeUp 0.7s 0.1s ease both;
 }
 
@@ -178,9 +210,9 @@ nav {
 
 .hero p {
     margin-top: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--gray-text);
-    max-width: 520px;
+    max-width: 480px;
     line-height: 1.7;
     animation: fadeUp 0.7s 0.2s ease both;
 }
